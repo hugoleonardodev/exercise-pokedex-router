@@ -7,6 +7,7 @@ import Pokedex from "./Pokedex";
 import AboutPokedex from "./AboutPokedex";
 import BookmarkedPokemons from "./BookmarkedPokemons";
 import PokemonDetails from "./PokemonDetails";
+import NotFound from "./NotFound";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <PokemonDetails {...props} pokemons={pokemons} />
             )}
           />
+          <Route path="/foo" component={NotFound} />
         </Switch>
       </BrowserRouter>
     </div>
